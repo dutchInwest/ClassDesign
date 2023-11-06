@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searchPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+    />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body> 
+    <!--登录弹窗-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">登录</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">邮箱地址</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">密码</label>
+                            <input type="password" class="form-control" id="inputPassword" required>+
+                            <div class="."></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light text-light">
+    <div class="container">
+        <a href="#" class="navbar-brand">工作个性化推荐</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><div class="btn nav-link text-dark d-flex " data-bs-toggle="modal" data-bs-target="#loginModal">登录</div></li>
+            <li class="nav-item"><div class="btn nav-link text-dark d-flex">注册</div></li>
+            <li class="nav-item"><div class="btn nav-link text-dark d-flex">历史推荐</div></li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+    <section class="p-5  text-dark text-center text-sm-start"><!--padding 四周加间距-->
+        <div class="container">
+            <div class="d-flex"><!--这个div左右布局-->
+                <div>
+                    <h1>从零开始<span class="text-warning">找工作</span></h1>
+                    <p class="my-4"><!--加y轴间隔-->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Corporis cumque explicabo possimus asperiores impedit culpa nisi 
+                        voluptates at temporibus voluptate animi, eaque minima quibusdam distinctio maiores blanditiis incidunt perspiciatis reiciendis.
+                        Illo saepe et, nihil veniam optio atque ipsam cum odit officia 
+                        id distinctio reprehenderit maxime cupiditate dolore, obcaecati 
+                        fugit iste mollitia odio unde sint? Esse placeat harum at illo 
+                        distinctio?
+                    </p>
+                    <button class="btn btn-primary btn-lg" onclick="window.location.href='../result.html'">开始评估你的情况</button>
+                </div>
+                <img src="../img/封面.gif" alt="showcase" class="w-50 d-none d-md-block"><!--默认显示为none尺寸大于md时为block-->
+            </div>
+        </div>
+    </section>
+    <section class="p-5 bg-primary text-light"><!--bg-primary蓝色-->
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3">输入你的情况</h3>
+                <div class="input-group new-input my-2 mx-md-2">
+                <input type="text" class="form-control" placeholder="毕业时间">
+                <input type="text" class="form-control" placeholder="院校水平(985/211/双非)">
+                </div>
+                <div class="input-group new-input my-2 mx-md-2">
+                <input type="text" class="form-control" placeholder="专业">
+                <input type="text" class="form-control" placeholder="实习经历">
+                </div>
+                <button class="btn btn-dark btn-lg">保存</button>
+            </div>
+        </div>
+    </section>
+    <section class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="card-title text-center"><!--text-center居中-->
+                                 牛客网
+                            </div>
+                            <div class="card-text my-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Rem adipisci dignissimos eaque vel, 
+                                harum molestias molestiae veritatis ducimus cum laborum numquam at esse atque pariatur eos 
+                                labore reprehenderit omnis consequuntur
+                            </div>
+                            <a href="https://www.nowcoder.com/" class="btn btn-primary ">访问</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" >
+    </script>
+
+</body>
+</html>
